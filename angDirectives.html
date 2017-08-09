@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+<body>
+
+<div ng-app="" ng-init="customers=[
+{name:'Ashok', city:'Bangalore',country:'India'},
+{name:'Gita', city:'Patna',country:'India'},
+{name:'Mahesh', city:'Delhi',country:'India'}]">
+
+<p>Looping with objects:</p>
+<ul>
+  <li ng-repeat="x in customers">
+  {{ x.name + ', ' + x.city + ' ,' + x.country}}</li>
+</ul>
+
+</div>
+
+</body>
+</html>
